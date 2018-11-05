@@ -6,43 +6,57 @@
      <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="inbox">
-    <div class="item">
-      <input type="checkbox">
-      <p>This is an inbox layout.</p>
+  <div class="inbox">
+      <div class="item">
+        <input type="checkbox">
+        <p>This is an inbox layout.</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Check one item</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Hold down your Shift key</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Check a lower item</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Everything inbetween should also be set to checked</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Try do it without any libraries</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Just regular JavaScript</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Good Luck!</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Don't forget to tweet your result!</p>
+      </div>
+
     </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Check one item</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Hold down your Shift key</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Check a lower item</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Everything inbetween should also be set to checked</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Try do it without any libraries</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Just regular JavaScript</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Good Luck!</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Don't forget to tweet your result!</p>
-    </div>
-  </div>
+   <p class="id">By Jtoledoiq</p>
+
+
+   <script type="text/javascript">
+
+    const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]')
+
+    function handleCheck(e){
+      console.log(e);
+    }
+
+    checkboxes.forEach(checkbox => checkbox.addEventListener('click',handleCheck));
+   </script>
   </body>
 </html>
